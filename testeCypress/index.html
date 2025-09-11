@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚀 Space Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🚀 Space Tasks</h1>
+    <div class="header-actions">
+      <button id="toggle-theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="task-input">
+      <input type="text" id="new-task" placeholder="Digite sua tarefa...">
+      <select id="task-category">
+        <option value="geral">Geral</option>
+        <option value="trabalho">Trabalho</option>
+        <option value="escola">Escola</option>
+        <option value="pessoal">Pessoal</option>
+      </select>
+      <button id="add-task">Adicionar</button>
+    </section>
+
+    <section id="filters">
+      <button data-filter="all" class="filter-btn active">Todas</button>
+      <button data-filter="pending" class="filter-btn">Pendentes</button>
+      <button data-filter="completed" class="filter-btn">Concluídas</button>
+    </section>
+
+    <section id="stats">
+      <p>Tarefas pendentes: <span id="pending-count">0</span></p>
+      <p>Tarefas concluídas: <span id="completed-count">0</span></p>
+    </section>
+
+    <section id="challenge">
+      <h2>Desafio do Dia</h2>
+      <p id="daily-challenge">Clique no botão para gerar seu desafio!</p>
+      <button id="generate-challenge">Nem aperta que não funciona</button>
+    </section>
+
+    <section id="tasks">
+      <ul id="task-list"></ul>
+      <p id="empty-message">Nenhuma tarefa por aqui</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
