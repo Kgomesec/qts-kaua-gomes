@@ -1,0 +1,27 @@
+{
+  "name": "pagina-login-api",
+  "version": "1.0.0",
+  "description": "API RESTful com Node.js, Express e SQLite para CRUD de usuários.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "sqlite",
+    "crud",
+    "api",
+    "rest"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.19.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
